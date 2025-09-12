@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style> 
+       
+
+        .container {
+            display: flex;
+            
+            align-items: center;
+
+            background-color: #e4dfdf;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(211, 210, 210, 0.1);
+            width: 100%;
+            height: 820px;
+            text-align: center;
+        }
+
+        .inner-container {
+            display: flex;
+           justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            height: 750px;
+            margin: auto;
+        }
+        .form-container {
+            
+            padding: 20px;
+            border-radius: 10px;
+          
+            width: 40%;
+            height: 100%;
+            margin-top: 40px;
+            margin-bottom: 0px;
+            margin-left: 70px;
+            margin-right: 100px;
+        }
+
+        .text-headers{
+            margin-bottom: 10px;
+            color: black;
+            text-align: left;
+        }
+
+        .text-headers h2 {
+            font-size: 40px;
+            font-family: 'playfair display', serif;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .text-headers h3 {
+            font-size: 24px;
+            font-family: 'pacifico', cursive;
+            margin: 10px 0;
+            color: rgb(43, 41, 41);
+        }
+        .text-headers p {
+            font-size: 16px;
+            font-family: 'inter', sans-serif;
+            color: gray;
+            margin: 10px 0 20px 0;
+        }
+        .image {
+            object-fit: cover;
+            width:  40%;
+            height: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 0px;
+        }
+        .form-buttons button{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 80%;
+            font-size: 16px;
+        }
+        .sign-up-button button{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .form-container label {
+            display: block;
+          margin:none;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .form-container input{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container .terms {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            
+            margin-bottom: 20px;
+           
+        }
+
+         .check-buttons {
+            display: flex;
+            gap: 20px;
+            
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0px;
+        }
+        .check_list {
+            display: flex;
+           
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .check_list input {
+           
+            width: 15px;
+            height: 15px;
+        }
+
+        .sign-in-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .divider {
+            text-align: center;
+            color: gray;
+        }
+        </style>
+</head>
+<body>
+    <div class = "container" >
+        <div class ="inner-container">
+            <div class="form-container">
+                <div class ="text-headers">
+                     <h3> HerShee Glasses</h3>
+
+            <h2>Welcome</h2>
+            <p>Create an account</p>
+                </div>
+                <div class = "form-buttons">
+                    <button>Sign Up with Google</button>
+
+                    <button>Sign Up with Facebook</button>
+                </div>
+            <p class="divider">------------------------------------------------or ------------------------------------------------</p>
+
+            <label for = "name">Username</label>
+            <input type="text" id="name" name="name" placeholder="Enter your username" ><br>
+            <label for = "email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" ><br>
+            <label for = "password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" >
+            <label for = "confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" ><br>
+            
+            <div class ="check-buttons">
+                <div class ="check_list">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+               
+                <div class ="check_list">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            <div class = "sign-up-button" >
+                <button type="submit">Create account</button>
+            </div>
+            <div class ="sign-in-link">
+                <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+            </div>
+            
+       
+           
+            <img class = "image" src="linked_post_image.jpg" alt="Sign Up Image" >
+
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>
