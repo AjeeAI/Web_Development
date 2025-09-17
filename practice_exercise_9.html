@@ -1,359 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            
-        }
-        .container {
-            width: 100%;
-            height: 2800px;
-            margin: auto;
-            background-color: rgb(12, 19, 1);
-            padding: 0px;
-            
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 2800px;
+        margin: auto;
+        background-color: rgb(12, 19, 1);
+        padding: 0px;
+      }
 
-        .header {
-            border-bottom: 2px solid white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgb(12, 19, 1);
-            height: 100px;
-            width: 100%;
-            border-radius: 10px;
-        }
-        .header h1 {
-            font-family: 'pacifico', cursive;
-            color: white;
-            font-size: 24px;
-            line-height: 100px;
-            padding-left: 20px;
-        }
-        .header button {
-            font-family: 'pacifico', cursive;
-            background-color: rgb(93, 139, 19);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 20px;
-        }
-        .nav_items {
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            gap: 20px;
-            color: white;
-            font-size: 18px;
-        }
-        .main {
-            height: 400px;
-            /* background-color: rgb(31, 49, 2); */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .main h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color:white
-        }
-        .main p {
-            font-size: 18px;
-            color:white
-        }
-        .main button {
-            font-family: 'pacifico', cursive;
-            background-color: rgb(93, 139, 19);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 20px;
-        }
-        .about {
-            font-family: 'inter', sans-serif;
-            width: 100%;
-            margin: none;
-            /* background-color: rgb(80, 90, 65); */
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 0px;
-            padding: 20px;
-           
-            border-radius: 10px;
-        }
-        .about h2 {
-            font-family: 'playfair display', serif;
-            color: white;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-        .about p {
-            font-family: 'inter', sans-serif;
-            color: white;
-              flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+      .header {
+        border-bottom: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(12, 19, 1);
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .header h1 {
+        font-family: "pacifico", cursive;
+        color: white;
+        font-size: 24px;
+        line-height: 100px;
+        padding-left: 20px;
+      }
+      .header button {
+        font-family: "pacifico", cursive;
+        background-color: rgb(93, 139, 19);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 20px;
+        height: 40px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .nav_items {
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        gap: 20px;
+        color: white;
+        font-size: 18px;
+      }
+      .main {
+        height: 400px;
+        /* background-color: rgb(31, 49, 2); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .main h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .main p {
+        font-size: 18px;
+        color: white;
+      }
+      .main button {
+        font-family: "pacifico", cursive;
+        background-color: rgb(93, 139, 19);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-right: 20px;
+        height: 40px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .about {
+        font-family: "inter", sans-serif;
+        width: 100%;
+        margin: none;
+        /* background-color: rgb(80, 90, 65); */
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+        padding: 20px;
 
-        .projects {
-            font-family: 'playfair display', serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 50px;
-            padding: 20px;
-           
-            border-radius: 10px;
-        }
-        .projects h2 {
-            color: white;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-        .projects p {
-            color: white;
-              flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+        border-radius: 10px;
+      }
+      .about h2 {
+        font-family: "playfair display", serif;
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      .about p {
+        font-family: "inter", sans-serif;
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+      }
 
-        .images {
-border-radius: 20px;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        /* .images img{
+      .projects {
+        font-family: "playfair display", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 20px;
+
+        border-radius: 10px;
+      }
+      .projects h2 {
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      .projects p {
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .images {
+        border-radius: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      /* .images img{
             width: 30%;
             height: 30%;     
             border-radius: 20px;   
             
         } */
-        .images figure{
-            width: 30%;
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-            border-radius: 20px;
+      .images figure {
+        width: 30%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 20px;
+      }
+      .images figure img {
+        border-radius: 20px;
+      }
 
-        }
-        .images figure img{
-            border-radius: 20px;
-        }
+      .images figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+      }
 
-        .images figcaption{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100px;
-            background-color: black;
-            color: white;
-            border-radius: 20px;
-        }
+      .contact {
+        font-family: "playfair display", serif;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 450px;
+        margin: 60px;
+      }
+      .contact_div {
+        color: white;
+        height: 100px;
+        width: 1000px;
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-        .contact{
-            font-family: 'playfair display', serif;
-            background-color: transparent;
-            display: flex;
-            flex-direction: column;
-            /* justify-content: center; */
-            align-items: center;
-            height: 450px;
-            margin: 60px;
-        }
-        .contact_div{
-            color: white;
-            height: 100px;
-            width: 1000px;
-            gap: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
+      .contact_div input {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+      .message label {
+        margin-left: 30px;
+        color: white;
+      }
+      .message textarea {
+        background-color: transparent;
+        color: white !important;
+        border: 1px solid white;
+        justify-content: start;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 25px;
+        width: 460px;
+      }
 
-        .contact_div input{
-            background-color: transparent;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 5px;
-        }
-        .message label{
-            margin-left: 40px;
-            color: white;
-        }
-         .message textarea{
-            background-color: transparent;
-            color: white;
-            display: flex;
-            border: 1px solid white;
-           
-            justify-content: center;
-            padding: 10px;
-           
-            border-radius: 10px;
-            margin-left: 40px;
-            width: 440px;
-         }
+      .send_button {
+        font-family: "pacifico", cursive;
+        width: 120px;
+        height: 30px;
+        margin: 20px;
+        color: white;
+        background-color: rgb(93, 139, 19);
+        border-radius: 10px;
+        border: none;
+        width: 120px;
+        height: 40px;
+      }
 
-         .send_button{
-            font-family: 'pacifico', cursive;
-            width: 120px;
-            height: 30px;
-            margin: 20px;
-            color: white;
-             background-color: rgb(93, 139, 19);
-             border-radius: 10px;
-         }
+      .container article {
+        font-family: "inter", sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 60px;
+      }
 
-         
+      .container article header {
+        font-family: "playfair display", serif;
+        font-size: 28px;
+        text-align: center;
+      }
+      .container article section h2 {
+        text-align: center;
+        font-family: "playfair display", serif;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .container article section p {
+        font-size: 16px;
+        line-height: 2.6;
+        text-align: center;
+      }
+      .container article footer {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
     </style>
-</head>
-<body>
-    <div class = "container">
-        <header class = "header">
-            <h1 class = "name">AjeeDev</h1>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="name">AjeeDev</h1>
 
-        <div class = "nav_items">
-            <p>About</p>
-            <p>Projects</p>
-            <p>Contact</p>
+        <div class="nav_items">
+          <p>About</p>
+          <p>Projects</p>
+          <p>Contact</p>
         </div>
 
         <button>Resume</button>
-        </header>
+      </header>
 
-        <main class="main">
-            <h1>Creative designer and developer</h1>
-            <br>
-            <p>I build beautiful and functional websites that leave a lasting impression.</p>
-            <br>
-            <button>View my work</button>
-        </main>
+      <main class="main">
+        <h1>Creative designer and developer</h1>
+        <br />
+        <p>
+          I build beautiful and functional websites that leave a lasting
+          impression.
+        </p>
+        <br />
+        <button>View my work</button>
+      </main>
 
-        <section class = "about">
+      <!-- <section class = "about">
             <h2>About Me</h2>
             <br>
             <p>I am a passionate web developer with a knack for creating stunning and user-friendly websites. With a strong foundation in both design and development, I bring ideas to life on the web.</p>
+        </section> -->
+
+      <article>
+        <header><u>About me</u></header>
+        <section>
+          <p>
+            ----------------------------------------------------------------------------------------------------------------
+          </p>
+        </section>
+        <br />
+        <section>
+          <p>
+            Hi, I'm Ajee — a passionate web developer with a deep love for
+            turning ideas into functional, visually stunning, and user-friendly
+            websites.
+          </p>
         </section>
 
-        <section class = "projects">
-            <h2>My Projects</h2>
-            <br>
-            <p>Here are some of the projects I've worked on recently. Each project showcases my skills in web development and design.</p>
-
-            <div class="images">
-                <figure>
-                    <img src="image1.png" alt="Project 1" 
-                title="Project Alpha">
-                <figcaption>
-                    Project Alpha
-                </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="image2.png" alt="Project 2">
-               
-                <figcaption>
-                    Project Beta
-                </figcaption>
-                </figure>
-
-                <figure>
-                     <img src="image3.png" alt="Project 3">
-                
-                <figcaption>
-                    Project Gamma
-                </figcaption>
-                </figure>
-                
-                
-               
-            </div>
-
+        <section>
+          <h2>What do I do</h2>
+          <p>
+            I thrive at the intersection of design and development, where
+            creativity meets clean code. With a strong foundation in
+            <strong>HTML, CSS, JavaScript, and modern frameworks</strong>, I
+            focus on building experiences that are as intuitive as they are
+            beautiful.
+          </p>
         </section>
 
-        <section class="contact">
-            <h2 style = "color: white; margin-bottom: 20px;">Contact Me</h2>
-            <br>
-            <div class="contact_div">
-                <div>
-                    <label for = "name"> 
-                    Name
-                    </label>
-                    <br>
-                    <input type="text" name = "name" placeholder="Enter your name">
-                </div>
+        <section>
+          <h2>My Approach</h2>
 
-                <br>
-                <div>
-                    <label for = "email"> 
-                    Email   
-                    </label>
-                    <br>
-                    <input type="email" name="email" placeholder="Enter your email">
-                </div>
-            </div>
-
-            <div class = "message">
-                <label for="message">
-                    Message
-                </label>
-                <br>
-                <textarea rows = "4" columns = "50" placeholder = "Type your message in here">
-                    
-                </textarea>
-            </div>
-
-
-                <button class = "send_button">Send Message</button>
-
-
+          <p>
+            What sets me apart is my attention to detail and my commitment to
+            creating solutions that truly solve problems. I care deeply about
+            seamless user interfaces, performance optimization, and
+            accessibility — ensuring every project strikes the perfect balance
+            of form and function.
+          </p>
         </section>
-</div>
-</body>
+
+        <section>
+          <h2>Beyond Coding</h2>
+
+          <p>
+            When I'm not coding, you'll find me exploring new design trends,
+            experimenting with animations and layouts, or sharpening my skills
+            to stay ahead in the ever-evolving world of web development.
+          </p>
+        </section>
+        <br />
+        <section>
+          <p>
+            ----------------------------------------------------------------------------------------------------------------
+          </p>
+        </section>
+        <footer>
+          If you're looking for someone who can take your ideas from concept to
+          launch — and make the process collaborative and enjoyable — let's
+          connect!
+        </footer>
+      </article>
+
+      <br />
+      <section class="projects">
+        <h2>My Projects</h2>
+        <br />
+        <p>
+          Here are some of the projects I've worked on recently. Each project
+          showcases my skills in web development and design.
+        </p>
+
+        <div class="images">
+          <figure>
+            <img src="image1.png" alt="Project 1" title="Project Alpha" />
+            <figcaption>Project Alpha</figcaption>
+          </figure>
+
+          <figure>
+            <img src="image2.png" alt="Project 2" />
+
+            <figcaption>Project Beta</figcaption>
+          </figure>
+
+          <figure>
+            <img src="image3.png" alt="Project 3" />
+
+            <figcaption>Project Gamma</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 style="color: white; margin-bottom: 20px">Contact Me</h2>
+        <br />
+        <div class="contact_div">
+          <div>
+            <label for="name"> Name </label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="email"> Email </label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="It should be a valid email address!"
+            />
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="message"> Message </label>
+          <br />
+          <textarea
+            rows="4"
+            columns="50"
+            placeholder="Type your message in here"
+          >
+          </textarea>
+        </div>
+
+        <button class="send_button">Send Message</button>
+      </section>
+    </div>
+  </body>
 </html>
